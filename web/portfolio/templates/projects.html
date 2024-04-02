@@ -4,4 +4,13 @@
 
 {% block content  %}
 <h1>welcome to projects </h1>
+
+
+{% for nice in new %}
+
+    {{ nice.description }}
+
+{%endfor%}
+
+
 {% endblock content %}

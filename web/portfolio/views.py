@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from . models import Project
 
 # Create your views here.
 
@@ -9,7 +10,10 @@ def index(request):
 
 
 def work(request):
-    context = {}
+    new = Project.objects.all()
+    context = {
+        new: "new"
+    }
     return render(request, "projects.html", context)
 
 

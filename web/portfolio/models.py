@@ -7,3 +7,6 @@ class Project(models.Model):
     description = models.TextField()
     image = models.FileField(upload_to="projects", blank=True)
     info = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.title

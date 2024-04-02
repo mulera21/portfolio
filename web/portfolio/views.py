@@ -8,9 +8,9 @@ def index(request):
     return render(request, "main.html", context)
 
 
-def projects(request, pk):
+def work(request, pk):
     context = {}
-    return  render(request, "project.html", context)
+    return render(request, "projects.html", context)
 
 
 def contact(request, pk):

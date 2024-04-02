@@ -8,11 +8,11 @@ def index(request):
     return render(request, "main.html", context)
 
 
-def work(request, pk):
+def work(request):
     context = {}
     return render(request, "projects.html", context)
 
 
-def contact(request, pk):
+def contact(request):
     context = {}
     return render(request, "contact.html", context)

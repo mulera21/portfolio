@@ -15,4 +15,4 @@ def projects(request, pk):
 
 def contact(request, pk):
     context = {}
-    return  render(request, "contact.html", context)
+    return render(request, "contact.html", context)

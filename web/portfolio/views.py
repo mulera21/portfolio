@@ -4,5 +4,15 @@ from django.shortcuts import render
 
 
 def index(request):
-    contex = {}
-    return render(request, "main.html", contex)
+    context = {}
+    return render(request, "main.html", context)
+
+
+def projects(request, pk):
+    context = {}
+    return  render(request, "project.html", context)
+
+
+def contact(request, pk):
+    context = {}
+    return  render(request, "contact.html", context)

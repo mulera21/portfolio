@@ -1,0 +1,4 @@
+body{
+    background-color: blue;
+    img src="{% static 'images/cart.png' %}">
+}

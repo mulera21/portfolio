@@ -10,9 +10,9 @@ def index(request):
 
 
 def work(request):
-    new = Project.objects.all()
+    fetch = Project.objects.all()
     context = {
-        new: "new"
+        fetch: "fetch"
     }
     return render(request, "projects.html", context)
 
